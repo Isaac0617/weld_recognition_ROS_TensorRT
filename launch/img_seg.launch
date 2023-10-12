@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="img_seg" type="segcpp" name="seg_node" output="screen"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find img_seg)/config/rviz_config.rviz" required = "true" />
+</launch>
